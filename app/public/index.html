@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>ArcGIS App</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+                crossorigin="anonymous">
+
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Jua|Poppins" rel="stylesheet">
+
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <link rel="stylesheet" href="https://js.arcgis.com/4.7/esri/css/main.css">
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://js.arcgis.com/4.7/"></script>
+<script src="assets/js/index.js"></script>
+</head>
+
+<body>
+        <header class="navbar navbar-light bg-light justify-content-center">
+                <a class="jua">ArcGIS Demo</a>
+        </header>
+        <main>
+                <div class="container">
+                        <div class="search-bar sub-nav-current">
+                                <div class="row">
+                                        <div class="col-3">
+                                                <button class=".btn-primary .btn-primary:hover btn" id="twoDim" >2D MAP</button>
+                                        </div>
+                                        <div class="col-3">
+                                                <button class=".btn-primary .btn-primary:hover btn" id="threeDim">3D MAP</button>
+                                        </div>
+                                </div>s
+                        </div>
+                        <div class="container">
+                                <div class="row">
+                                        <div class="col-4">
+                                                        <h6>Select which feature to add onto the map!</h6>
+                                                        <hr>
+                                                        <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios" id="option1" value="option1Value" checked>
+                                                                <label class="form-check-label" for="exampleRadios1">
+                                                                        New York Housing Map
+                                                                </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios" id="option2" value="option2Value">
+                                                                <label class="form-check-label" for="exampleRadios2">
+                                                                        Vector Layer
+                                                                </label>
+                                                        </div>
+
+                                        </div>
+                                        <div class="col-8" id="viewDiv" style="overflow:hidden;">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </main>
+</body>
+
+
+</html>
+
